@@ -2,414 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobile Phones | Premium Smartphone Store</title>
-  <meta name="description" content="Discover the latest smartphones, compare features, and shop premium mobile phones with a world-class experience." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #0b1120;
-      --secondary: #1d4ed8;
-      --accent: #06b6d4;
-      --text: #e2e8f0;
-      --muted: #94a3b8;
-      --surface: rgba(255, 255, 255, 0.08);
-      --surface-2: #ffffff;
-      --dark-text: #0f172a;
-      --border: rgba(255,255,255,0.12);
-      --shadow: 0 20px 45px rgba(2, 8, 23, 0.25);
-      --radius: 22px;
-      --gradient: linear-gradient(135deg, #020617 0%, #0f172a 35%, #1d4ed8 100%);
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+  <!-- SEO Title -->
+  <title>Best Mobile Phones 2026 | Latest Smartphones Price & Features</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Buy latest mobile phones 2026 with price, features, reviews. Compare iPhone, Samsung, Pixel smartphones in one place.">
+  <meta name="keywords" content="mobile phones, smartphones 2026, iPhone price, Samsung phones, buy mobile online">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yourdomain.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Best Mobile Phones 2026">
+  <meta property="og:description" content="Compare latest smartphones with price and features">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1598327105666-5b89351aff97">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
     body {
       font-family: 'Inter', sans-serif;
+      margin: 0;
       background: #f8fafc;
-      color: #0f172a;
-      line-height: 1.6;
-    }
-
-    .container {
-      width: min(1200px, 92%);
-      margin: auto;
     }
 
     header {
-      background: var(--gradient);
+      background: linear-gradient(135deg,#020617,#1d4ed8);
       color: white;
-      position: relative;
-      overflow: hidden;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.2rem 0;
-    }
-
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
-
-    .logo span { color: #67e8f9; }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover { color: #67e8f9; }
-
-    .menu-toggle {
-      display: none;
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-      gap: 3rem;
-      padding: 5rem 0 6rem;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.5rem, 5vw, 4.5rem);
-      line-height: 1.1;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero p {
-      color: var(--text);
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      max-width: 560px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 1rem 2rem;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      font-weight: 700;
-      text-decoration: none;
-      transition: 0.3s ease;
-      display: inline-block;
-    }
-
-    .btn-primary {
-      background: white;
-      color: var(--secondary);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow);
-    }
-
-    .btn-secondary {
-      background: transparent;
-      color: white;
-      border: 1px solid rgba(255,255,255,0.3);
-    }
-
-    .hero-card {
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      padding: 2rem;
-      box-shadow: var(--shadow);
-    }
-
-    .phone-showcase {
-      background: linear-gradient(145deg, #ffffff, #e2e8f0);
-      border-radius: 24px;
-      padding: 2rem;
+      padding: 40px;
       text-align: center;
-      color: var(--dark-text);
     }
 
-    .phone-showcase img {
-      width: 100%;
-      max-width: 320px;
-      filter: drop-shadow(0 20px 30px rgba(0,0,0,0.25));
-      transition: transform 0.4s ease;
-    }
+    h1 { font-size: 2.5rem; }
 
-    .phone-showcase img:hover {
-      transform: scale(1.05) rotate(-2deg);
-    }
-
-    section {
-      padding: 5rem 0;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .section-title h2 {
-      font-size: 2.5rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .section-title p {
-      color: #64748b;
-      max-width: 700px;
+    .container {
+      width: 90%;
       margin: auto;
     }
 
-    .products-grid {
+    .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+      padding: 40px 0;
     }
 
-    .product-card {
+    .card {
       background: white;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
-      transition: 0.35s ease;
-      border: 1px solid #e2e8f0;
-    }
-
-    .product-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
-    }
-
-    .product-image {
-      background: linear-gradient(135deg, #eff6ff, #ecfeff);
-      padding: 2rem;
+      padding: 20px;
+      border-radius: 15px;
       text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
 
-    .product-image img {
-      width: 180px;
-      height: auto;
+    .card img {
+      width: 150px;
+      loading: lazy;
     }
 
-    .product-info {
-      padding: 1.5rem;
-    }
-
-    .product-info h3 {
-      margin-bottom: 0.5rem;
-      font-size: 1.35rem;
-    }
-
-    .price {
-      color: var(--secondary);
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin: 1rem 0;
-    }
-
-    .features {
-      display: flex;
-      justify-content: space-between;
-      color: #64748b;
-      font-size: 0.95rem;
-      margin-bottom: 1.2rem;
-    }
-
-    .newsletter {
-      background: var(--gradient);
+    .btn {
+      background: #1d4ed8;
       color: white;
-      border-radius: 28px;
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .newsletter form {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .newsletter input {
-      padding: 1rem 1.2rem;
-      width: 320px;
-      border: none;
-      border-radius: 999px;
-      outline: none;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 50px;
+      display: inline-block;
+      margin-top: 10px;
     }
 
     footer {
       background: #020617;
-      color: #cbd5e1;
+      color: white;
       text-align: center;
-      padding: 2rem 0;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 80px;
-        right: 4%;
-        width: 260px;
-        background: rgba(15, 23, 42, 0.98);
-        flex-direction: column;
-        padding: 1.5rem;
-        border-radius: 16px;
-      }
-
-      .nav-links.active { display: flex; }
-      .menu-toggle { display: block; }
-      .hero { grid-template-columns: 1fr; text-align: center; }
-      .hero-buttons { justify-content: center; }
+      padding: 20px;
     }
   </style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="logo">Mobile<span>Phones</span></div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="menu-toggle" id="menuToggle">☰</div>
-      </nav>
 
-      <div class="hero">
-        <div>
-          <h1>Discover the Future of Mobile Innovation</h1>
-          <p>Explore premium smartphones with cutting-edge technology, elegant design, and exceptional performance. Built for a global audience.</p>
-          <div class="hero-buttons">
-            <a href="#products" class="btn btn-primary">Shop Now</a>
-            <a href="#features" class="btn btn-secondary">Learn More</a>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="phone-showcase">
-            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97" alt="Premium Smartphone">
-            <h3>Flagship Series 2026</h3>
-            <p>AI Camera • 5G • Ultra Performance</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <section id="products">
-    <div class="container">
-      <div class="section-title">
-        <h2>Featured Smartphones</h2>
-        <p>Carefully selected devices that combine style, speed, and smart innovation.</p>
-      </div>
-
-      <div class="products-grid" id="productGrid"></div>
-    </div>
-  </section>
-
-  <section id="features">
-    <div class="container">
-      <div class="newsletter">
-        <h2>Stay Updated with the Latest Releases</h2>
-        <p>Get exclusive offers, product launches, and expert insights delivered to your inbox.</p>
-        <form id="subscribeForm">
-          <input type="email" id="email" placeholder="Enter your email address" required>
-          <button class="btn btn-primary" type="submit">Subscribe</button>
-        </form>
-        <p id="message" style="margin-top:1rem;"></p>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact">
-    <div class="container">
-      <p>© 2026 Mobile Phones. All Rights Reserved. Designed for a Global Audience.</p>
-    </div>
-  </footer>
-
-  <script>
-    const products = [
-      {
-        name: 'Galaxy Ultra X',
-        price: '$999',
-        image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9',
-        display: '6.8" AMOLED',
-        storage: '256GB'
-      },
-      {
-        name: 'iPhone Pro Max',
-        price: '$1,099',
-        image: 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab',
-        display: '6.7" OLED',
-        storage: '512GB'
-      },
-      {
-        name: 'Pixel Vision Pro',
-        price: '$800',
-        image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505',
-        display: '6.6" LTPO',
-        storage: '256GB'
-      }
-    ];
-
-    const productGrid = document.getElementById('productGrid');
-
-    products.forEach(product => {
-      productGrid.innerHTML += `
-        <div class="product-card">
-          <div class="product-image">
-            <img src="${product.image}" alt="${product.name}">
-          </div>
-          <div class="product-info">
-            <h3>${product.name}</h3>
-            <div class="price">${product.price}</div>
-            <div class="features">
-              <span>${product.display}</span>
-              <span>${product.storage}</span>
-            </div>
-            <a href="#" class="btn btn-primary">View Details</a>
-          </div>
-        </div>`;
-    });
-
-    document.getElementById('menuToggle').addEventListener('click', () => {
-      document.getElementById('navLinks').classList.toggle('active');
-    });
-
-    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const email = document.getElementById('email').value;
-      document.getElementById('message').textContent = `Thank you! ${email} has been subscribed.`;
-      this.reset();
-    });
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Mobile Phones",
+    "url": "https://yourdomain.com"
+  }
   </script>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Best Mobile Phones in 2026</h1>
+  <p>Compare latest smartphones with price & features</p>
+</header>
+
+<div class="container">
+
+  <h2>Featured Smartphones</h2>
+
+  <div class="products" id="products"></div>
+
+</div>
+
+<footer>
+  <p>© 2026 Mobile Phones - All Rights Reserved</p>
+</footer>
+
+<script>
+const products = [
+  {
+    name: "Samsung Galaxy Ultra X Price in Pakistan",
+    price: "$999",
+    img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+  },
+  {
+    name: "iPhone Pro Max 2026 Price",
+    price: "$1099",
+    img: "https://images.unsplash.com/photo-1592750475338-74b7b21085ab"
+  },
+  {
+    name: "Google Pixel Vision Pro Price",
+    price: "$800",
+    img: "https://images.unsplash.com/photo-1580910051074-3eb694886505"
+  }
+];
+
+let container = document.getElementById("products");
+
+products.forEach(p => {
+  container.innerHTML += `
+  <div class="card">
+    <img src="${p.img}" alt="${p.name}" loading="lazy">
+    <h3>${p.name}</h3>
+    <p>${p.price}</p>
+    <a href="#" class="btn">Buy Mobile Phone</a>
+  </div>`;
+});
+</script>
+
 </body>
 </html>
